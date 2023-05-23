@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Item</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: black;
+            height: 500px;
+        }
+        .flex-container>div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            line-height: 60px;
+            text-align: center;
+            font-size: large;
+        }
+        @media (max-width:700px)  {
+            .flex-container{
+            background-color: green;
+            }
+        }
+        
+         .item1{
+            order: 4;
+            flex-grow: 2;
+
+        }
+         .item3{
+            flex-basis: 40px;
+        } 
+         .item2{
+            align-self: center;
+        }  
+        
+    </style>
+</head>
+<body>
+
+    <!-- order
+flex-grow: specifies how much a flex item will grow relative to the rest of the flex items.
+Flext-basis : specifies the initial length of a flex item
+Align-self -->
+
+        <div class="flex-container"> 
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+        </div>
+
+    
+</body>
+</html>

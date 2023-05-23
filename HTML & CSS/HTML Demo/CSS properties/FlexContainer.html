@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex container</title>
+    <style>
+        .flex-container{
+            display: flex;         
+            background-color: black;
+            height: 500px;
+            flex-direction: column;  
+            flex-wrap: wrap;  
+            justify-content:  center;   
+            align-content: center;
+        }
+        .flex-container > div{
+            background-color: red;            
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            line-height: 60px;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex-direction
+flex-wrap
+justify-content
+align-items
+ -->
+    <div class="flex-container">
+        <div>Hello ATS</div>
+        
+        
+    </div>
+</body>
+</html>

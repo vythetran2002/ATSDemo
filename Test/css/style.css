@@ -1,0 +1,36 @@
+.my-slider{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px; 
+    
+}
+.control{
+    list-style: none;
+}
+.container{
+    position: relative;
+    margin: 3%;
+}
+
+.control li{
+    position: absolute;
+    z-index: 99;
+    top: 50%;  
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control li:hover{
+    background: #000;
+}  
+.control li.prev{
+    left: 20px;
+}
+.control li.next{
+    right: 20px;
+}
