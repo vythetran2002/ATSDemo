@@ -162,3 +162,9 @@
     height: 10px;
     float: left
 }
+.arrow-hover [data-controls=next] {
+    right: -75px;
+}
+.arrow-hover [data-controls=prev] {
+    left: -75px;
+}
