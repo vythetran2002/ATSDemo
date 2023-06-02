@@ -1,6 +1,6 @@
 var slider = tns({
   container: '.my-slider',
-  items: 3,
+  items: 1,
   slideBy: 1,
   controls: true,
   autoplay: true,
