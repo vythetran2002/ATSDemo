@@ -3,9 +3,19 @@ var slider = tns({
   items: 3,
   slideBy: 1,
   controls: true,
-  gutter: 20,
   autoplay: true,
   nav: false,
   autoplayButtonOutput: false,
-  controlsContainer : "#custom-control"
+  controlsContainer : "#custom-control",
+  responsive: {
+    576: {
+      items: 1
+    },
+    990: {
+        items: 2
+    },
+    1200: {
+        items: 3
+    }
+  }
 });
