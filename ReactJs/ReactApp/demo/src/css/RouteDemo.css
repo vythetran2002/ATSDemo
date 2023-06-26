@@ -1,0 +1,28 @@
+/* Reset default margin and padding */
+
+/* Style for the navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  height: 50px;
+}
+
+/* Style for the navbar items */
+.navbar li {
+  display: inline-block;
+}
+
+/* Style for the navbar links */
+.navbar li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* Style for the navbar links on hover */
+.navbar li a:hover {
+  background-color: #555;
+}

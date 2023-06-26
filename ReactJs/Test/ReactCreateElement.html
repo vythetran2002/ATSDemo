@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>     
+    <script>
+        //DOM
+        const ulDOM = document.createElement('ul');
+        const liDOM = document.createElement('li');
+        const li2DOM = document.createElement('li');
+
+        liDOM.innerText= 'JS';
+        liDOM.style = 'color: green; font-size: 30px'
+        li2DOM.innerText = 'ReactJs';
+        li2DOM.style = 'color: grey '
+
+        ulDOM.appendChild(liDOM);
+        ulDOM.appendChild(li2DOM);
+
+        document.body.appendChild(ulDOM);
+
+        console.log(ulDOM.outerHTML);
+        
+        // REACT
+
+        const ulReact = React.createElement('ul',
+        {id:'test'},
+            React.createElement('li',null,'JS'),
+            React.createElement('li',null,'ReactJs')
+        );
+
+        console.log(ulReact);
+    </script>
+   
+</html>

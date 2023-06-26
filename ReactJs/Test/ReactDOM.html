@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> 
+
+</head>
+<body>  
+    <div id="bai1"></div>
+    <div id="bai2"></div>
+    <div id="bai3"></div>
+</body>
+    
+
+    <script>
+        // Bai 1
+        const txtHello = React.createElement('h1',{
+            title: 'Hello',
+            className: 'heading'
+        }, 'Hello ATS!');
+
+        const courseList = React.createElement('ul',null,
+            React.createElement('li',null,'Java'),
+            React.createElement('li',null,'Dart')
+        );
+
+        const table = React.createElement('div',{
+            className : 'post-item'
+        }, 
+        React.createElement('h2',{
+            title: 'Hoc react tai F8'
+        },'Hoc ReacJs'),
+        React.createElement('p',null,'Hoc React tu co ban den nang cao')
+        );
+
+        ReactDOM.render(txtHello,document.querySelector('#bai1'));
+        ReactDOM.render(courseList,document.querySelector('#bai2'));
+        ReactDOM.render(table,document.querySelector('#bai3'));
+    </script>
+</html>

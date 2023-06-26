@@ -1,0 +1,5 @@
+1.
+document.createElement();
+document.body.appendChild();
+console.dir()
+innerText, id, className, style
