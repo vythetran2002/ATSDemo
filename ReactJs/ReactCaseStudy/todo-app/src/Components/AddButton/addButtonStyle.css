@@ -1,0 +1,6 @@
+.add-button{
+    height: 56px !important;
+    background-color: #7a689c !important;
+    color: white !important;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}

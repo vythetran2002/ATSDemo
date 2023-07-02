@@ -17,10 +17,12 @@ import UseMemoDemo from './UseMemo';
 import UseFetchDemo from './UseFetch';
 import UseFetch from './useFetch/UseFetch';
 import testFetch from './useFetch/testFetch';
+import Test from './Test/test';
+import CustomHookDemo from './CustomHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <testFetch />
+    <UseReducerDemo />
 );
 
 // If you want to start measuring performance in your app, pass a function

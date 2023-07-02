@@ -29,15 +29,15 @@ import UseFetch from "./useFetch/UseFetch";
 // }
 
 export default function UseFetchDemo() {
-  const [data] = UseFetch("https://jsonplaceholder.typicode.com/todos");
-  console.log('test' + data);
+    const [data] = UseFetch("https://jsonplaceholder.typicode.com/todos");
+    console.log('test' + data);
 
-  return (
-    <>
-      {data &&
-        data.map((item) => {
-          return <p key={item.id}>{item.title}</p>;
-        })}
-    </>
-  );
+    return (
+        <>
+            {data &&
+                data.map((item) => {
+                    return <p key={item.id}>{item.title}</p>;
+                })}
+        </>
+    );
 };

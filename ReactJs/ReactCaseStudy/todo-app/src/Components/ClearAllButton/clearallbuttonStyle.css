@@ -1,0 +1,6 @@
+.clear-button{
+    background-color: #7a689c !important;
+    color: white !important;
+    width: 88px !important;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}

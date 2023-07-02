@@ -1,0 +1,28 @@
+body{
+    background-color: #7a689c !important;
+}
+
+.wrapper{
+    max-width: 405px;
+    margin: 135px auto;
+    background: #fff;
+    border-radius: 7px;
+    padding: 28px 0px 28px 0px;
+}
+.navigator{
+    max-width: 100% !important;
+    padding-right: 15px !important;
+    margin: 15px 0px 25px 25px !important;
+}
+.mg-r{
+    margin-right: 20px !important;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.link-item{
+    display: block !important;
+    max-height: 100% !important;
+    align-self: center !important;
+}

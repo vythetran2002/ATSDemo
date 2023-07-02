@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 const UseFetch = (url) => {
-  const [data, setData] = useState(null);
+    const [data, setData] = useState(null);
 
-  const fetchData = async () => {
-    const response = await axios.get(url);
-    setData(response.data);
-  }
+    const fetchData = async () => {
+        const response = await axios.get(url);
+        setData(response.data);
+    }
 
-  useEffect(() => {
-    fetchData();
-  }, [url]);
+    useEffect(() => {
+        fetchData();
+    }, []);
 
-  return data;
+    return data;
 }
 
 export default UseFetch;

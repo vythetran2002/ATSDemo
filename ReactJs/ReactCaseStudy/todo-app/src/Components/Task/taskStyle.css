@@ -1,0 +1,38 @@
+.task{
+    margin: 15px 0 25px 25px !important;
+    padding: 0 15px 0 0 !important;
+}
+.task-form{
+    width: fit-content ;
+}
+.setting-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 4px;
+}
+li{
+    /* width: 100px; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+li>span{
+    margin-left: 3px;
+}
+.more-button{
+    cursor: pointer;
+    align-self: center;
+}
+.setting-options{
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}

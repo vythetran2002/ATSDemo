@@ -4,7 +4,9 @@ import '../Styles/style.css'
 
 
 
-export default function FromAmountMoney({ onChange, data }) {
+function FromAmountMoney({ onChange, data }) {
+
+    console.log('RENDERING FROM AMOUNT OF MONEY COMPONENT: ');
 
     // Filter any string to only number string
     function filterNumbersFromString(str) {
@@ -28,3 +30,4 @@ export default function FromAmountMoney({ onChange, data }) {
         </div>
     )
 }
+export default React.memo(FromAmountMoney);
