@@ -1,8 +1,13 @@
 import Button from '@mui/material/Button';
-import './clearallbuttonStyle.css'
+import styles from './clearallbuttonStyle.module.css'
 
-export default function ClearAllButton() {
+export default function ClearAllButton({ onClick }) {
+
+    const handlingClick = () => {
+        onClick();
+    }
+
     return (
-        <Button className='clear-button'>Clear</Button>
+        <Button className={styles['clear-button']} onClick={handlingClick}>Clear</Button>
     )
 }

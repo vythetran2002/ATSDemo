@@ -1,5 +1,5 @@
 .task{
-    margin: 15px 0 25px 25px !important;
+    margin: 15px 0 15px 25px !important;
     padding: 0 15px 0 0 !important;
 }
 .task-form{
@@ -15,24 +15,40 @@ ul {
   padding: 0;
   margin: 4px;
 }
+
 li{
     /* width: 100px; */
     padding: 5px;
     display: flex;
     align-items: center;
+    border-radius: 5px;
 }
 li>span{
     margin-left: 3px;
 }
+.setting-options li:hover{
+    background: #a794b5
+}
 .more-button{
     cursor: pointer;
     align-self: center;
+
 }
 .setting-options{
-    top: 10px;
+    left: -69px;
+    top: 19px;
     cursor: pointer;
     display: flex;
     position: absolute;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.16s ease;
     background: #fff;
+    z-index: 2;
+    border-radius: 5px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
+
+/* .setting-container:hover .setting-options{
+    transform: scale(1);
+} */

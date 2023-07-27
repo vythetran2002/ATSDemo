@@ -1,0 +1,9 @@
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.link-item{
+    display: block !important;
+    max-height: 100% !important;
+    align-self: center !important;
+}

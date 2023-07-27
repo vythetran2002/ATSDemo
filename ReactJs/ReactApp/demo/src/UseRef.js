@@ -1,62 +1,68 @@
 import { render } from "@testing-library/react";
 import { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom/client";
+import UseRefPage from "./Pages/RefPage";
 
 // Does Not Cause Re-renders
 
-export default function UseRefDemo() {
-    const [count1, setCount1] = useState(0);
-    const [count2, setCount2] = useState(0);
-    const countAll = useRef(0);
-    useEffect(
-        () => {
-            countAll.current = countAll.current + 1;
-        }, [count1, count2]
-    )
-
-    return (
-        <>
-            <p>You have clicked this button {count1} time(s)</p>
-            <button onClick={() => setCount1((c) => c + 1)}>Button1</button> <br></br>
-            <p>You have clicked this button {count2} time(s)</p>
-            <button onClick={() => setCount2((c) => c + 1)}>Button1</button> <br></br>
-            <h1>You have clicked {countAll.current} time(s)</h1>
-            <br></br>
-        </>
-    )
-}
-
-//Accessing DOM Elements
 // export default function UseRefDemo() {
-
-//     const inputElement = useRef();
-
-//     const handlingSubmit = (e) => {
-//         inputElement.current.focus();
-//     }
-
-//     return (
-//         <div style={{ margin: 25 }}>
-
-//             <label>Enter your name:</label>
-//             <br></br>
-//             <input
-//                 type="text"
-//                 placeholder="enter your name" />
-//             <br></br>
-//             <label>Enter your age:</label>
-//             <br></br>
-//             <input
-//                 type="text"
-//                 placeholder="enter your age" ref={inputElement} />
-//             <br></br>
-
-//             <input type="submit" value='SUBMIT' onClick={handlingSubmit}></input>
-
-//         </div >
+//     const [count1, setCount1] = useState(0);
+//     const [count2, setCount2] = useState(0);
+//     const countAll = useRef(0);
+//     useEffect(
+//         () => {
+//             countAll.current = countAll.current + 1;
+//         }, [count1, count2]
 //     )
 
+//     return (
+//         <>
+//             <p>You have clicked this button {count1} time(s)</p>
+//             <button onClick={() => setCount1((c) => c + 1)}>Button1</button> <br></br>
+//             <p>You have clicked this button {count2} time(s)</p>
+//             <button onClick={() => setCount2((c) => c + 1)}>Button1</button> <br></br>
+//             <h1>You have clicked {countAll.current} time(s)</h1>
+//             <br></br>
+//         </>
+//     )
 // }
+
+// Accessing DOM Elements
+export default function UseRefDemo() {
+
+
+    const inputElement = useRef();
+
+
+    const handlingSubmit = (e) => {
+        inputElement.current.value = ''
+        inputElement.current.focus();
+    }
+
+    return (
+        <div style={{ margin: 25 }}>
+
+            <label>Enter your name:</label>
+            <br></br>
+            <UseRefPage locator={inputElement} />
+            <input
+                type="text"
+                placeholder="enter your name" />
+            <br></br>
+            <label>Enter your age:</label>
+            <br></br>
+            {/* <input
+                type="text"
+                placeholder="enter your age" ref={inputElement} /> */}
+
+            <br></br>
+
+            <input type="submit" value='SUBMIT' onClick={handlingSubmit}></input>
+
+        </div >
+    )
+
+}
 
 
 // Tracking State Changes
